@@ -1,0 +1,149 @@
+/* Glowne */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+/*h1, #main-menu {*/
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #333333;
+}
+
+/* Menu nawigacyjne */
+
+#main-nav {
+    background-color: transparent;
+    border: none;
+}
+
+#main-nav a {
+    color: white;
+    font-size: 1.5em;
+}
+
+#main-nav a:hover {
+    color: red;
+}
+
+#main-nav.scroll {
+    color: black;
+}
+
+#main-nav.scroll a:hover {
+	color: #777777;
+}
+
+#main-menu ul a {
+	margin-right: 0;
+	padding: 20px;
+}
+
+/* Menu nawigacyjne koniec */
+
+/* Header */
+
+#main-header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/floor.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+#main-header .header-caption {
+    text-align: center;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 460px;
+    left: 0;
+    right: 48%;
+    margin: auto;
+}
+
+#main-header .header-caption h1 {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+/*    text-transform: lowercase;*/
+}
+
+#main-header .header-caption h2 {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6em;
+    font-style: italic;
+}
+
+/*Header koniec */
+
+/* Sekcja o mnie */
+
+#services {
+    margin-top: 1px;
+    text-align: center;
+}
+
+#services .container {
+    padding: 10px;
+}
+
+.row {
+    font-family: 'Playfair Display', serif;
+}
+
+.row h1 {
+    text-transform: lowercase;
+}
+
+.row p {
+    font-style: italic;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.row1 {
+    padding: 5px;
+}
+    
+#services h2 {
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.row1 p {
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+#services .fa {
+    font-size: 2em;
+    height: 50px;
+    width: 50px;
+    background-color: lavenderblush;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid gold;
+    transition: all .5s;
+    line-height: 50px;
+    text-align: center;
+}
+
+#services .fa:hover {
+    background-color: black;
+    color: lavenderblush;
+    transform: rotate(360deg);
+}
+
+/* Koniec */
+
+
+
