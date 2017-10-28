@@ -6,16 +6,25 @@
 
 body {
     margin: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Indie Flower', cursive;
 }
 
-/*h1, #main-menu {*/
-    text-transform: uppercase;
+
+
+.obraz {
+	background-image: url(../img/wall-2723530_1920.jpg);
+	min-height: 250px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
+
+
 
 h1, h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rokkitt', serif;
     color: #333333;
+    font-style: normal;
 }
 
 /* Menu nawigacyjne */
@@ -26,7 +35,7 @@ h1, h2 {
 }
 
 #main-nav a {
-    color: white;
+    color: goldenrod;
     font-size: 1.5em;
 }
 
@@ -35,15 +44,15 @@ h1, h2 {
 }
 
 #main-nav.scroll {
-    color: black;
+    color: blue;
 }
 
 #main-nav.scroll a:hover {
-	color: #777777;
+	color: red;
 }
 
 #main-menu ul a {
-	margin-right: 0;
+	margin-right: 20px;
 	padding: 20px;
 }
 
@@ -71,15 +80,15 @@ h1, h2 {
 
 #main-header .header-caption h1 {
     color: black;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rokkitt', serif;
     font-size: 4em;
 /*    text-transform: lowercase;*/
 }
 
 #main-header .header-caption h2 {
     color: black;
-    font-family: 'Playfair Display', serif;
-    font-size: 2.6em;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.8em;
     font-style: italic;
 }
 
@@ -87,21 +96,23 @@ h1, h2 {
 
 /* Sekcja o mnie */
 
-#services {
+#omnie {
     margin-top: 1px;
     text-align: center;
+    background-color: beige;
 }
 
-#services .container {
+#omnie .container {
     padding: 10px;
 }
 
 .row {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rokkitt', serif;
 }
 
 .row h1 {
     text-transform: lowercase;
+    font-size: 3em;
 }
 
 .row p {
@@ -114,7 +125,7 @@ h1, h2 {
     padding: 5px;
 }
     
-#services h2 {
+#omnie h2 {
     font-size: 1.9em;
     text-align: center;
 }
@@ -124,7 +135,7 @@ h1, h2 {
     margin: 10px;
 }
 
-#services .fa {
+#omnie .fa {
     font-size: 2em;
     height: 50px;
     width: 50px;
@@ -137,13 +148,142 @@ h1, h2 {
     text-align: center;
 }
 
-#services .fa:hover {
+#omnie .fa:hover {
     background-color: black;
     color: lavenderblush;
     transform: rotate(360deg);
 }
 
 /* Koniec */
+
+/* Sekcja umiejetnosci */
+
+#skills {
+    height: 650px;
+    background-color: beige;
+}
+
+#skills h1 {
+    margin: 20px;
+    font-size: 3em;
+}
+
+.row p {
+    text-align: center;
+    font-size: 1.6em;
+    padding-top: 0px;
+    font-family: 'Rokkitt', serif;
+}
+
+
+.box {
+	width: 150px;
+	height: 210px;
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+    line-height: 19px;
+}
+
+.box-in {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: all .5s;
+    font-size: 1.5em;
+    font-family: 'Indie Flower', cursive;
+}
+
+.box-front {
+	background-color: ;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.box-back {
+	background-color: transparent;
+	-ms-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	line-height: 50px;		
+}
+
+.box:hover .box-front {
+	-ms-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.box:hover .box-back {
+	-ms-transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+/* KONIEC UMIEJETNOSCi */
+
+#portfolio {
+	text-align: center;
+}
+
+#mojeportfolio {
+    font-size: 1.7em;
+	font-weight: 300;
+}
+
+#portfolio .portfolio-items {
+	font-size: 0;
+	text-align: center;
+}
+
+#portfolio #portfolio-container .floated {
+    width: 33.33333%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    position: relative;
+}
+
+#portfolio #portfolio-container .floater .item-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 61, 79, 0.8);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    
+}
+
+#portfolio #portfolio-container .floated .item-mask:hover {
+    opacity: 1;
+}
+
+#item-1 {
+    background-image: url('../img/portfolio1.jpg');
+}
+
+#item-2 {
+    background-image: url('../img/portfolio2.jpg');
+}
+
+#item-3 {
+    background-image: url('../img/portfolio4.jpg');
+}
+
+
+
 
 
 
